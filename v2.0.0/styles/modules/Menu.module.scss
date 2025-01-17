@@ -5,19 +5,21 @@
     @apply my-10 w-fit mx-auto font-primary text-3xl;
     & > li {
       @apply opacity-0 scale-95;
-      
-      span a, label {
+
+      span a,
+      label {
         @apply block py-3;
       }
 
-      span, label {
+      span,
+      label {
         @apply transition-all duration-300;
       }
 
       label input {
         & + span {
           @apply flex items-center justify-center gap-x-2 cursor-pointer;
-          
+
           svg {
             @apply transition-transform duration-200;
           }
@@ -59,7 +61,7 @@
   @apply scale-y-100 shadow-2xl;
 
   ul > li {
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
     @apply opacity-100 translate-y-0 scale-100;
     @for $i from 1 through 9 {
       &:nth-child(#{$i}) {
@@ -67,15 +69,16 @@
       }
     }
 
-    & > span, & > label {
+    & > span,
+    & > label {
       text-decoration-color: transparent;
     }
 
     & > span.active,
-    & > label.active > span, 
+    & > label.active > span,
     & > label a.active,
     & > span:hover,
-    & > label:hover > span, 
+    & > label:hover > span,
     & > label a:hover {
       text-decoration-color: inherit;
       text-decoration: underline;

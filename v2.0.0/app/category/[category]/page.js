@@ -30,7 +30,7 @@ export async function generateMetadata(props) {
   };
 }
 
-const CategorySingle = async props => {
+const CategorySingle = async (props) => {
   const params = await props.params;
   const slug = params.category;
   const posts = allPosts.filter((post) => post.frontmatter.category === slug);

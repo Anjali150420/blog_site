@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <main className="flex flex-col min-h-screen">
       <Header />
       <section>{children}</section>
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };
